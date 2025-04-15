@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="calculation">
+      <div class="disp">
+        <input type="text" id="i" placeholder="0" disabled />
+      </div>
+      <div class="buttons">
+        <!-- Row 1 -->
+        <button data-number="(" class="sbut but">(</button>
+        <button data-number=")" class="sbut but">)</button>
+        <button data-number="AC" id="clear" class="operation but">AC</button>
+        <button data-number="DEL" id="erase" class="operation but">DEL</button>
+        <button data-number="/" class="operation but">/</button>
+        <button data-number="*" class="operation but">*</button>
+
+        <!-- Row 2 -->
+        <button data-number="^2" class="sbut but">^2</button>
+        <button data-number="^3" class="sbut but">^3</button>
+        <button data-number="7" class="digit but">7</button>
+        <button data-number="8" class="digit but">8</button>
+        <button data-number="9" class="digit but">9</button>
+        <button data-number="-" class="operation but">-</button>
+
+        <!-- Row 3 -->
+        <button data-number="√(" class="sbut but">√</button>
+        <button data-number="∛(" class="sbut but">∛</button>
+        <button data-number="6" class="digit but">6</button>
+        <button data-number="5" class="digit but">5</button>
+        <button data-number="4" class="digit but">4</button>
+        <button data-number="+" class="operation but">+</button>
+
+        <!-- Row 4 -->
+        <button data-number="!" class="sbut but">!</button>
+        <button data-number="sin(" class="sbut but">sin(</button>
+        <button data-number="1" class="digit but">1</button>
+        <button data-number="2" class="digit but">2</button>
+        <button data-number="3" class="digit but">3</button>
+        <button data-number="=" id="equal" class="operation-but">=</button>
+
+        <!-- Row 5 -->
+        <button data-number="cos(" class="sbut but">cos(</button>
+        <button data-number="tan(" class="sbut but">tan(</button>
+        <button data-number="0" id="zero" class="digit but">0</button>
+        <button data-number="." class="digit but">.</button>
+      </div>
+    </div>
+    <div class="hist">
+      <h2 id="hTitle">History</h2>
+      <div id="hContent"></div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
